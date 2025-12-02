@@ -1,11 +1,7 @@
 html, body {
+    height: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-image: url(image/manFon.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 100%;
 }
 
 .header {
@@ -17,7 +13,7 @@ html, body {
     z-index: 100;
 }
 
-.header-top {
+.Sdtop {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,7 +24,7 @@ html, body {
     height: 50px;
 }
 
-.search-bar {
+.search {
     flex: 1;
     display: flex;
     margin: 0 20px;
@@ -36,7 +32,7 @@ html, body {
     border-radius: 10px;
 }
 
-.search-bar input {
+.search input {
     flex: 1;
     padding: 10px;
     border: none;
@@ -44,7 +40,7 @@ html, body {
     border-radius: 10px;
 }
 
-.search-bar button {
+.search button {
     background-color: #c6d4ef;
     color: white;
     border: none;
@@ -53,18 +49,19 @@ html, body {
     border-radius: 9px;
 }
 
-.header-icons {
+.icons {
     position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
+    right: 6px;
 }
 
-.header-icons .cart {
+.icons .cart {
     position: relative;
 }
 
-.header-nav {
+.nav {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -72,14 +69,14 @@ html, body {
     background-color: #f7f7f7;
 }
 
-.header-nav a {
+.nav a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
     transition: color 0.2s;
 }
 
-.header-nav a:hover {
+.nav a:hover {
     color: #1e6eff;
 }
 
@@ -97,4 +94,34 @@ main article img {
 
 .fade {
     animation: fad 0.6s ease forwards;
+}
+
+.card {
+    position: relative;
+    top: 23px;
+    border: 1px solid black;
+    width: 300px;
+    height: 343px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card div {
+    border: 1px solid black;
+    width: 283px;
+    height: 283px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px auto 20px;
+}
+
+section img {
+    /* width: 208; */
+    height: 283px;
+    border-radius: 20px;
+}
+
+main section {
+    display: flex;
+    gap: 10px;
 }
