@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico/favicon.ico">
+    <link rel="stylesheet" href="styleCard.css">
+    <title>Кресло Fayzon model 1B</title>
+</head>
+<body>
+    <header class="header">
+        <div class="Sdtop">
+            <div class="logotip">
+                <a href="Main.html"><img src="image/Full_logo_Fayzon.jpg" alt=""></a>
+            </div>
+        <div class="search">
+        <input type="text" placeholder="Ищите товары, бренды и категории">
+        <button><img src="image/search.png" alt="" width="20" ></button>
+        </div>
+        <div class="icons">
+            <div class="profile"><img src="image/ac.jpg" alt="" width="30"></div>
+            <div class="cart"><img src="image/corzina.png" alt="" width="25"></div>
+        </div>
+    </div>
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="#">Категории</a>
+            <a href="#">Акции</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <div class="flexCt">
+            <a href="Main.html"><img src="image/back.png" alt="" class="btn_back"></a>
+            <span class="flexCtHover">Главная</span>
+            <span>/</span>
+            <span class="flexCtHover">Мебель</span>
+            <span>/</span>
+            <span class="flexCtHover">Комфорт</span>
+            <span>/</span>
+            <span class="flexCtHover">Кресло</span>
+            <span>/</span>
+            <span class="flexCtHover">Fayzon</span>
+        </div>
+        <aside>
+            <div>
+                <div class="flex">
+                    <img class="change" src="image/card1.png" data-full="image/card1.png" alt="" id="iflex4">
+                    <img class="change" src="image/card1Dif.jpg" data-full="image/card1Dif.jpg" alt="" id="iflex3">
+                    <img class="change" src="image/card1-Dif3.jpg" data-full="image/card1-Dif3.jpg" alt="" id="iflex2">
+                </div>
+                <img src="image/card1.png" alt="" id="iflex" >
+                <article>
+                    <div>
+                        <div class="opt">Fayzon</div>
+                        <div class="opt2"><img src="image/star.png" alt="">Оригинал</div>
+                    </div>
+                    <div class="flex_art">
+                        <h3>Игровое кресло от Fayzon Model 1B на колесиках</h3>
+                        <div class="block_post">
+                            <div>
+                                <div>
+                                    <img src="image/cardicon.png" width="40" height="40">
+                                </div>
+                                <div>
+                                    <div class="price">9 999 ₽</div>
+                                </div>
+                                <div id="nal">
+                                    <div>наличными 10 999 ₽</div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="DOS">Доставим завтра</div>
+                        <button class="btn_add">Добавить в корзину</button>
+                        <button class="btn_now">Купить сейчас</button>
+                    </div>
+                    <div class="flex_otziv">
+                        <div class="otziv">
+                            <div>
+                                <img src="image/starOtziv.jpg" alt="" width="16" height="16">
+                                <div class="img_art">
+                                    <div>5   ·  1 оценка</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_info">
+                            <div>Артикул</div>
+                            <div>574373812</div>
+
+                            <div>Гарантийный срок</div>
+                            <div>12 мес</div>
+
+                            <div>Материал обивки</div>
+                            <div>Экокожа Premium SoftTouch</div>
+
+                            <div>Материал корпуса мебели</div>
+                            <div>сталь; фанера усиленная</div>
+
+                            <div>Материал</div>
+                            <div>крестовины, армированный пластик</div>
+
+                            <div>Наполнитель</div>
+                            <div>вспененный полиуретан высокой плотности</div>
+
+                            <div>Материал колес</div>
+                            <div>полиуретан бесшумный</div>
+
+                            <div>Максимальная нагрузка</div>
+                            <div>130 кг</div>
+
+                            <div>Тип механизма</div>
+                            <div>качание Tilt с фиксацией</div>
+                            
+                            <div>Регулировка высоты</div>
+                            <div>газлифт 3 класса</div>
+
+                            <div>Подлокотники</div>
+                            <div>регулируемые, 2D</div>
+
+                            <div>Высота кресла</div>
+                            <div>118–128 см</div>
+
+                            <div>Ширина сиденья</div>
+                            <div>50 см</div>
+
+                            <div>Глубина сиденья</div>
+                            <div>47 см</div>
+
+                            <div>Высота спинки</div>
+                            <div>73 см</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        const iflex = document.getElementById("iflex");
+        const change = document.querySelectorAll(".change");
+
+        change.forEach(img => {
+        img.addEventListener("mouseenter", () => {
+        iflex.src = img.dataset.full;
+            })
+        });
+    </script>
+</body>
+</html>
